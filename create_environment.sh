@@ -25,7 +25,7 @@ chmod +x "$BASE_DIR/submission_reminder_$name/startup.sh"
 
 #updating the data given into our file
 
-cat <<EOF>"$BASE_DIR/submission_reminder_$name/app/reminder.sh"
+cat<<EOF>"$BASE_DIR/submission_reminder_$name/app/reminder.sh"
 #!/bin/bash
 
 # Source environment variables and helper functions

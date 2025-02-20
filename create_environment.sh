@@ -64,12 +64,12 @@ function check_submissions {
     done < <(tail -n +2 "\$submissions_file") # Skip the header
 }
 EOF
-cat<<EOF>"$BASE_DIR/submission_reminder_$name/assets/submissions.txt"
+cat<<EOF>"$BASE_DIR/submission_reminder_$name/config/config.env"
 # This is the config file
 ASSIGNMENT="Shell Navigation"
 DAYS_REMAINING=2
 EOF
-cat<<EOF>"$BASE_DIR/submission_reminder_$name/config/config.env"
+cat<<EOF>"$BASE_DIR/submission_reminder_$name/assets/subnissions.txt"
 student, assignment, submission status
 Chinemerem, Shell Navigation, not submitted
 Chiagoziem, Git, submitted

@@ -95,7 +95,7 @@ if [ ! -f "\$BASE_DIR/config/config.env" ]; then
     exit 1
 fi
 
-if [ ! -f "\$BASE_DIR/modules/functions.sh" ]; then
+if [ ! -f "\$BASE_DIR/modules/function.sh" ]; then
     echo "Error: functions.sh not found!"
     exit 1
 fi
@@ -107,7 +107,7 @@ fi
 
 # Source configuration file and functions file
 source "\$BASE_DIR/config/config.env"
-source "\$BASE_DIR/modules/functions.sh"
+source "\$BASE_DIR/modules/function.sh"
 
 # Check if all necessary variables are set
 if [ -z "\$ASSIGNMENT" ] || [ -z "\$DAYS_REMAINING" ]; then
